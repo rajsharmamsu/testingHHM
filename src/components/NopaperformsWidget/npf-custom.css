@@ -1,0 +1,23 @@
+/* Style input fields */
+.form-control {
+  border: 1px solid #D5DDEB !important;
+  border-radius: 16px !important;
+  padding: 10px 14px !important;
+}
+
+/* Style submit button */
+.npfWidgetSubmit {
+  width: 100% !important;
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  border-radius: 9999px !important; /* Fully rounded */
+  padding: 12px 20px !important;
+  font-weight: bold !important;
+  text-transform: uppercase;
+  transition: background 0.3s ease;
+}
+
+/* Optional: Hover effect */
+.npfWidgetSubmit:hover {
+  background-color: #222222 !important;
+}

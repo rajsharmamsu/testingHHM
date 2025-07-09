@@ -1,0 +1,2092 @@
+
+.text-section {
+    position: relative;
+    flex: 1;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    background:linear-gradient(180deg, #081E2D 0%, #073953 64.63%, #166D9A 132.54%),
+        url('https://msu-website-all-objects.s3.ap-south-1.amazonaws.com/subject-ad-page/blending.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: overlay; 
+    padding: 0px !important;
+}
+.text-block-items .logo-img {
+    max-width: 200px;
+    height: auto;
+    object-fit: contain;
+    align-self: start !important;
+    display: flex;
+    text-align: left !important;
+
+}
+.image-section {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.banner-bg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.text-block-items {
+    position: relative;
+    padding: 60px 60px 0px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.banner-title {
+    font-family: "DM Sans";
+    font-weight: 800;
+    line-height: 53px;
+    
+    align-self: flex-start;
+}
+.banner-title span{
+    color: #FFA201;
+}
+.banner-para-text {
+    font-family: "DM Sans";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 23px;
+    text-align: left !important;
+    color: #FFFFFF;
+    padding-bottom: 0.5rem;
+}
+
+.para-highlight {
+    color: #FFA201;
+    font-weight: 700;
+}
+
+.play-btn {
+    position: absolute;
+}
+
+/* Play Button */
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    color: white;
+    background-color: #2eafe2;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.play-button {
+    font-size: 3rem;
+}
+
+.video-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.video-container {
+    position: relative;
+    width: 80%;
+    height: 80%;
+    max-width: 900px;
+    max-height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.video-frame {
+    width: 100%;
+    /* height: 100%; */
+    border: none;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(255, 255, 255, 0.7);
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    color: #000;
+    z-index: 10;
+}
+
+.close-btn:hover {
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.play-button img {
+    width: 20px;
+    height: auto;
+    margin-left: 5px;
+}
+
+.play-button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.image-section img {
+    width: 90%;
+    height: auto;
+}
+
+
+.banner-btn {
+    border: 3px solid white;
+}
+
+.banner-btn:hover {
+    background-color: black !important;
+}
+
+.program-overview {
+    width: 100%;
+}
+
+.program-overview-ele-img {
+    max-width: 591px;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.program-overview-ele-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* WIL-msu-block */
+.WIL-msu-block {
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    gap: 15px;
+}
+
+.WIL-msu-item {
+    position: relative;
+}
+
+.WIL-msu-item-img {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.WIL-msu-item-img img,
+.application-item-img img,
+
+.advantages-tems-img img,
+
+.art-infrastructure-items-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.WIL-msu-overlay {
+    position: absolute;
+    bottom: 0px;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    padding: 15px;
+    width: 90%;
+    height: 85px;
+    opacity: 0;
+    /* transition: opacity 0.5s ease; */
+}
+.WIL-msu-item:hover .WIL-msu-overlay {
+    opacity: 1;
+    transition: opacity 0.9s ease;
+  }
+/* .WIL-msu-overlay::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 351px;
+    height: 85px;
+    transition: top 0.3s ease;
+}
+
+.WIL-msu-overlay:hover::before {
+    top: 0;
+} */
+
+.WIL-msu-overlay p {
+    margin: 0;
+    z-index: 5;
+}
+
+/* .WIL-msu-overlay:hover p {
+    color: white;
+} */
+
+.WIL-msu-para-1 {
+    border-bottom: 5px solid #E04C96;
+    transition: background-color 0.3s ease;
+}
+
+.WIL-msu-para-1:hover {
+    background-color: #E04C96;
+}
+
+.WIL-msu-para-2 {
+    /* border-bottom: 5px solid #01778B; */
+    transition: background-color 0.3s ease;
+    margin-bottom: 88px;
+}
+/* 
+.WIL-msu-para-2:hover {
+    background-color: #01778B;
+} */
+
+.WIL-msu-para-3 {
+    border-bottom: 5px solid #FF5E00;
+    transition: background-color 0.3s ease;
+}
+
+.WIL-msu-para-3:hover {
+    background-color: #FF5E00;
+}
+
+.WIL-msu-para-4 {
+    border-bottom: 5px solid #0D5581;
+    transition: background-color 0.3s ease;
+}
+
+.WIL-msu-para-4:hover {
+    background-color: #0D5581;
+}
+
+.WIL-msu-para-5 {
+    border-bottom: 5px solid #FF8F28;
+    transition: background-color 0.3s ease;
+}
+
+.WIL-msu-para-5:hover {
+    background-color: #FF8F28;
+}
+
+.WIL-msu-para-6 {
+    border-bottom: 5px solid #002033;
+    transition: background-color 0.3s ease;
+}
+
+.WIL-msu-para-6:hover {
+    background-color: #002033;
+}
+
+/* Individual border-bottom and background colors */
+.WIL-msu-para-1::before {
+    background-color: #E04C96;
+}
+
+.WIL-msu-para-2::before {
+    background-color: #01778B;
+}
+
+.WIL-msu-para-3::before {
+    background-color: #FF5E00;
+}
+
+.WIL-msu-para-4::before {
+    background-color: #0D5581;
+}
+
+.WIL-msu-para-5::before {
+    background-color: #FF8F28;
+}
+
+.WIL-msu-para-6::before {
+    background-color: #002033;
+}
+
+.WIL-msu-para-1,
+.WIL-msu-para-2,
+.WIL-msu-para-3,
+.WIL-msu-para-4,
+.WIL-msu-para-5,
+.WIL-msu-para-6 {
+    background-color: #FFA201;
+}
+
+/* ps-outcomes */
+
+.ps-outcomes {
+    padding: 30px 0px;
+    width: 100%;
+    background: linear-gradient(246.82deg, #FFCE00 0%, #FFB111 99.21%);
+}
+
+.ps-outcomes-text {
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    width: 540px;
+}
+
+.ps-heading {
+    font-weight: 700 !important;
+    font-size: 18px;
+}
+
+.ps-outcomes-items {
+    gap: 20px;
+    height: 100%;
+}
+
+.ps-outcomes-ele {
+    width: 590px;
+    height: 224px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #ffff;
+    gap: 20px;
+    box-sizing: border-box;
+}
+
+.ps-outcomes-ele-heading {
+    font-family: "DM Sans";
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    text-align: left;
+    color: #002033;
+}
+
+.ps-outcomes-para,
+.WIL-msu-para-1 p,
+.WIL-msu-para-2 p,
+.WIL-msu-para-3 p,
+.WIL-msu-para-4 p,
+.WIL-msu-para-5 p,
+.WIL-msu-para-6 p {
+    color: #002033;
+}
+
+.boder-1 {
+    border-bottom: 5px solid #E04C96;
+}
+
+.boder-2 {
+    border-bottom: 5px solid #007787;
+
+}
+
+/* Our Industry Partners  */
+.our-industry-partners {
+    width: 100%;
+}
+
+.full-ele-img {
+    height: 525px;
+    background-image: url('https://msu-website-all-objects.s3.ap-south-1.amazonaws.com/course-landing-page/In-partner-bg.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.industry-partners-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: #1291D4;
+    height: 525px;
+}
+
+.industry-partners-block-item {
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 30px 0px;
+}
+
+.industry-partners-img-ele {
+    max-width: 163px;
+    height: auto;
+    border: 1px solid #E0E0E0;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.industry-partners-img-ele img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Advantages */
+.advantages-block {
+    width: 100%;
+    background: #011F31;
+    padding: 40px 0px;
+}
+
+.advantages-block .main-heading,
+.advantages-block .sub-heading {
+    color: white;
+}
+
+.advantages-tems {
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    background-color: #ffff;
+}
+
+.advantages-para {
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-weight: 400;
+    /* line-height: 24px; */
+    /* margin-bottom: 0.2rem; */
+}
+.advantages-para strong{
+    color: #00587C;
+    font-weight: 700;
+}
+.advantages-tems-img {
+    width: 100%;
+}
+/* .advantages-tems {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; 
+    gap: 20px;
+}
+
+.advantages-tems-img {
+    flex: 1;
+    height: 100%;
+    width: 100%;
+}
+
+.advantages-tems-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 12px;
+} */
+.art-infrastructure-items {
+    position: relative;
+}
+
+.art-infrastructure-item-text {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    /* background: linear-gradient(180deg, rgba(0, 145, 227, 0) -7.3%, rgba(0, 145, 227, 0.7) 100%); */
+}
+
+.art-infrastructure-item-text p {
+    color: #FFFFFF;
+    font-weight: 600;
+}
+
+/* Eligibility */
+.eligibility-block {
+    margin: 3rem 0rem;
+    position: relative;
+    width: 100%;
+    padding: 30px 0px;
+    background:linear-gradient(246.82deg, #FFCE00 0%, #FFB111 99.21%);
+;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.eligibility-items {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.eligibility-block .main-heading,
+.eligibility-block .sub-heading {
+    /* color: #FFFFFF; */
+    text-align: center;
+}
+
+/* .eligibility-block .sub-heading {
+    width: 80%;
+} */
+.eligibility-img{
+    width: 58px;
+}
+.eligibility-block-img {
+    position: relative;
+    margin-top: -3.9rem;
+    align-self: first baseline;
+}
+
+.semester-btn {
+    border: 1px solid #005580;
+    outline: none;
+    border-radius: 8px;
+    padding: 7px 12px;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 27px;
+    text-align: center;
+    color: #005580;
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+
+.semester-btn.active {
+    background-color: #011F31;
+    color: #FFFFFF;
+    border-color: #011F31;
+}
+
+.career-roadmap-block {
+    width: 100%;
+    height: auto;
+    margin: 3rem 0px;
+}
+
+.career-roadmap-top-items {
+    background: #011F31;
+    width: 100%;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius:16px;
+    border-bottom-left-radius:16px;
+    padding: 30px 40px;
+}
+
+.career-roadmap-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.career-roadmap-top-items .mediam-para {
+    color: #FFFFFF;
+}
+
+.career-roadmap-bottom-items {
+    width: 100%;
+    background: #005580;
+    padding: 30px 40px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+.horizontal-line {
+    border: none;
+    border-top: 1px dotted #FFFFFF;
+    width: 100%;
+    margin: 10px 0;
+    opacity: .4;
+}
+
+.career-roadmap-bottom-text .highlight-text {
+    color: #FFFFFFCC;
+    opacity: .8;
+    /* width: 530px; */
+}
+
+.career-roadmap-bottom-text-title {
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+.semester-block {
+    gap: 10px;
+}
+
+/* Application */
+.application-item-img {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.application-img-block {
+    justify-content: space-between;
+}
+
+.apply-button,
+.view-all-button {
+    width: 100%;
+}
+
+.apply-button {
+    margin-top: 2.5rem;
+}
+
+.apply-now-btn,
+.view-all_btn {
+    width: 211px;
+    height: 60px;
+    border: 3px solid #FFFDFD;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    border-radius: 12px;
+    background: #FFB111;
+    transition: .3s ease-in;
+}
+.download-brochure{
+    width: 270px;
+    height: 60px;
+    border: 3px solid #FFFDFD;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    border-radius: 12px;
+    background: transparent;
+    transition: .3s ease-in;
+    align-self: center;
+}
+.view-all_btn{
+    font-family: "DM Sans" !important;
+    font-size: 16px !important;
+    font-weight: 400 !important;
+}
+
+.read-more {
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #005580;
+    border: none;
+    background: #FFFFFF;
+    outline: none;
+    text-decoration: none;
+    display: flex !important;
+    gap: 10px !important;
+    flex-direction: row !important;
+}
+
+.read-more_img {
+    width: 20px;
+    height: 20px;
+}
+
+.apply-now-btn:hover,
+.view-all_btn:hover {
+    background: #CC8D0D;
+}
+
+/* Testimonials */
+
+.custom-card {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 6px 40px 10px #0B7EAE24;
+    /* width: 90%; */
+    height: 430px;
+    border-radius: 16px;
+}
+
+.custom-card-img {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.img-fluid {
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+}
+
+.user-name {
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 27px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.user-designation {
+    font-family: "DM Sans";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    text-align: center;
+    color: #000000;
+    opacity: .7;
+}
+
+.slick-track {
+    margin: 2rem 0rem;
+}
+
+/* Blog  */
+.blog-items {
+    width: 100%;
+    overflow: hidden;
+}
+
+#blog-posts {
+    overflow: hidden;
+}
+
+.blog-info {
+    font-family: "DM Sans";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    color: #5F636C;
+}
+
+.card-item-img {
+    width: 100%;
+    overflow: hidden;
+}
+
+.card-item-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px !important;
+}
+
+.blog-card-title,
+.blog-card-para {
+    font-family: "DM Sans";
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.blog-card-title {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+.blog-card-para {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #000000;
+    opacity: .7;
+    margin-bottom: 5px;
+}
+
+.vertical-line-ele {
+    border: none !important;
+    border-left: 2px solid #000 !important;
+    height: 18px !important;
+    margin: 0 16px !;
+}
+
+.blog-ele .card-body {
+    padding: 0rem !important;
+}
+
+.card-section {
+    overflow: hidden;
+}
+
+/* Frequently Asked Questions */
+
+.faq-content {
+    margin-top: 2rem;
+    width: 85%;
+}
+
+.custom-container {
+    width: 85%;
+}
+
+.accordion-item {
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: .5px solid #D0DFF1 !important;
+}
+
+.accordion-button {
+    outline: none;
+    padding: 15px 0px;
+}
+
+
+.accordion-button:focus {
+    box-shadow: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #ffffff !important;
+}
+
+.accordion-button::after {
+    background-image: url(https://msu-website-all-objects.s3.ap-south-1.amazonaws.com/icon/plus.webp) !important;
+}
+
+.accordion-text {
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+    color: #000000;
+}
+
+.accordion-body {
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    color: #000000;
+    padding: 15px 0px;
+}
+
+.accordion-block {
+    margin-top: 3rem;
+}
+
+.accordion-block .contentBX {
+    position: relative;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+
+.accordion-block .contentBX-1 {
+    background: #1291D4;
+}
+
+.accordion-block .contentBX-2 {
+    background: #FFB111;
+}
+
+.accordion-block .contentBX-3 {
+    background: #009FA9;
+}
+
+.accordion-block .contentBX .label {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    color: #FFFFFF;
+    padding: 20px;
+    cursor: pointer;
+    width: 100%;
+    font-family: "DM Sans";
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 52px;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.accordion-block .contentBX .label::before {
+    content: '+';
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+}
+
+.accordion-block .contentBX .content {
+    position: relative;
+    background: #FFFFFF;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: auto;
+}
+
+.accordion-block .contentBX.active .content {
+    height: auto;
+    padding: 0px 20px 20px 20px;
+    font-family: "DM Sans";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: left;
+    color: #FFFFFF;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.accordion-block .contentBX-1.active .content {
+    background: #1291D4;
+}
+
+.accordion-block .contentBX-2.active .content {
+    background: #FFB111;
+}
+
+.accordion-block .contentBX-3.active .content {
+    background: #009FA9;
+}
+
+.accordion-block .contentBX.active .label::before {
+    content: '-';
+    transition: 0.5s;
+    font-size: 22px;
+}
+
+.content-title {
+    width: 100%;
+    border-top: 1px solid white;
+    padding-top: 20px;
+}
+
+.content-title label {
+    font-family: "DM Sans";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: left;
+}
+
+.content-sub-title {
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 33px;
+    text-align: left;
+}
+
+/* .white-icon {
+    width: 20px;
+    height: 20px;
+    align-self: center;
+} */
+ .white-icon{
+    width: 20px;
+    height: 20px;
+    align-self: start;
+    margin-top: 4px;
+ }
+
+.content .mediam-para {
+    padding-top: -10px;
+}
+
+.career-roadmap-bottom-img img {
+    width: 70px !important;
+    height: auto !important;
+    max-width: 70px !important;
+}
+
+@media (max-width: 576px) {
+    .banner-block {
+        flex-direction: column;
+    }
+    .image-section img {
+        width: 100%;
+        height: auto;
+    }
+
+    .text-block-items {
+        padding: 40px 20px !important;
+    }
+
+    .banner-title {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .banner-para-text {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .accordion-block .contentBX .label {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .play-btn {
+        width: 80px;
+        height: 80px;
+    }
+
+    .play-button {
+        width: 50px;
+        height: 50px;
+    }
+
+    .apply-now-btn , .download-brochure {
+        height: 50px !important;
+    }
+
+    .career-roadmap-top-items {
+        padding: 20px;
+    }
+
+    .career-roadmap-bottom-text .highlight-text {
+        width: 100%;
+    }
+
+    .view-all_btn {
+        display: none;
+    }
+
+    .block-section {
+        margin: 0rem 0rem;
+    }
+
+    .main-heading {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .sub-heading {
+        width: 100%;
+        line-height: 25px;
+        font-size: 1rem;
+    }
+    .apply-now-btn img , .download-brochure img {
+        width: 18px;
+        height: auto;
+    }
+
+    .mediam-para {
+        line-height: 25px;
+    }
+
+    .advantages-tems {
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    .application-img-block {
+        justify-content: center;
+    }
+
+    .advantages-tems-list {
+        order: 1;
+    }
+
+    .our-industry-partners {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .WIL-msu-item-img {
+        width: 90%;
+        height: auto;
+    }
+
+    .advantages-block {
+        padding: 20px 0px;
+    }
+
+    .eligibility-block {
+        padding: 20px 0px;
+        margin: 2rem 0rem;
+    }
+
+    .eligibility-items {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .eligibility-block-img {
+        width: 100%;
+        margin-top: -0.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .eligibility-items-text {
+        order: 1;
+    }
+
+    .eligibility-block .main-heading,
+    .eligibility-block .sub-heading {
+        text-align: center;
+    }
+
+    .eligibility-block .sub-heading {
+        width: 100%;
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .WIL-msu-overlay {
+        width: 80%;
+        height: auto;
+    }
+
+    .full-ele-img {
+        display: none;
+    }
+
+    .industry-partners-block {
+        height: auto;
+    }
+
+    .industry-partners-block-item {
+        gap: 10px;
+        padding: 30px 10px;
+    }
+
+    .industry-partners-img-ele {
+        max-width: 85px;
+        height: auto;
+    }
+
+    .WIL-msu-block {
+        gap: 10px;
+    }
+
+    .ps-outcomes-ele {
+        width: 100%;
+        height: auto;
+        gap: 0px;
+    }
+
+    .ps-heading {
+        font-size: 16px;
+    }
+
+    .boder-1 {
+        margin-bottom: 1rem;
+    }
+
+    .ps-outcomes-text {
+        width: 100%;
+    }
+
+    .career-roadmap-bottom-items {
+        padding: 20px 10px;
+    }
+
+    .semester-btn {
+        padding: 8px 20px;
+    }
+
+    .semester-block {
+        gap: 10px;
+    }
+
+    .career-roadmap-bottom-img img {
+        width: 65px !important;
+        height: auto !important;
+        max-width: 65px !important;
+    }
+
+    .custom-card .mediam-para {
+        font-size: 14px;
+    }
+
+    .custom-card {
+        height: 380px;
+    }
+
+    .user-name {
+        margin-top: 0rem;
+    }
+}
+.apply-button-fixed{
+    display: none;
+}
+
+@media (max-width: 768px){
+    .apply-button-fixed{
+        display: flex;
+        position: fixed;
+        bottom: 20px;
+        z-index: 9;
+        width: 100%;
+        padding: 0px 20px;
+    }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+    .semester-block {
+        gap: 10px;
+    }
+
+    .career-roadmap-bottom-items {
+        padding: 25px 10px;
+    }
+
+    .view-all_btn {
+        display: none;
+    }
+
+    .play-button {
+        width: 50px;
+        height: 50px;
+    }
+
+    .banner-block {
+        flex-direction: column;
+    }
+
+    .text-block-items {
+        padding: 40px 30px !important;
+    }
+
+    .banner-title {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .accordion-block .contentBX .label {
+        font-size: 20px;
+        line-height: 27px;
+    }
+
+    .banner-para-text {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .play-button {
+        width: 50px;
+        height: 50px;
+    }
+
+    .custom-card .mediam-para {
+        font-size: 14px;
+    }
+
+    .custom-card {
+        height: 430px;
+    }
+
+    .user-name {
+        margin-top: 0rem;
+    }
+
+    .apply-now-btn,.download-brochure ,
+    .view-all_btn {
+        height: 50px !important;
+    }
+
+    .block-section {
+        margin: 3rem 0rem;
+    }
+
+    .career-roadmap-top-items {
+        padding: 20px;
+    }
+
+    .career-roadmap-bottom-text .highlight-text {
+        width: 100%;
+    }
+
+    .main-heading {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .sub-heading {
+        width: 100%;
+    }
+
+    .advantages-block {
+        padding: 20px 0px;
+    }
+
+    .advantages-tems {
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    .advantages-tems-list {
+        order: 1;
+    }
+
+    .eligibility-block .sub-heading {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .application-img-block {
+        justify-content: center;
+    }
+
+    .our-industry-partners {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .full-ele-img {
+        display: none;
+    }
+
+    .WIL-msu-item-img {
+        width: 90%;
+        height: auto;
+    }
+
+    .WIL-msu-overlay {
+        width: 85%;
+        height: auto;
+    }
+
+    .industry-partners-block {
+        height: auto;
+    }
+
+    .industry-partners-block-item {
+        gap: 10px;
+        padding: 30px 40px;
+    }
+
+    .industry-partners-img-ele {
+        width: 120px;
+    }
+
+    .ps-outcomes-text {
+        width: 100%;
+    }
+
+    .WIL-msu-block {
+        gap: 10px;
+    }
+
+    .ps-heading {
+        font-size: 16px;
+    }
+
+    .ps-outcomes-ele {
+        width: 100%;
+        height: auto;
+        gap: 0px;
+    }
+
+    .boder-1 {
+        margin-bottom: 1rem;
+    }
+
+    .career-roadmap-bottom-img img {
+        width: 70px !important;
+        height: auto !important;
+        max-width: 70px !important;
+    }
+}
+
+
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .banner-block {
+        flex-direction: column;
+    }
+
+    .text-block-items {
+        padding: 50px 40px !important;
+    }
+
+    .banner-title {
+        margin-bottom: 2rem;
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    .banner-para-text {
+        font-size: 16px;
+        line-height: 17px;
+    }
+
+    .banner-btn {
+        margin-top: 0rem;
+    }
+    .apply-button {
+        margin-top: 0.1rem;
+    }
+    .view-all_btn {
+        display: none;
+    }
+
+    .custom-card .mediam-para {
+        font-size: 14px;
+    }
+
+    .custom-card {
+        height: 450px;
+    }
+
+    .block-section {
+        margin: 3rem 0rem;
+    }
+
+    .main-heading {
+        font-size: 26px;
+        line-height: 36px;
+    }
+
+    .accordion-block .contentBX .label {
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .career-roadmap-top-items {
+        padding: 20px;
+    }
+
+    .career-roadmap-bottom-text .highlight-text {
+        width: 100%;
+    }
+
+    .WIL-msu-item-img {
+        width: 100%;
+        height: 260px;
+    }
+
+    .advantages-block {
+        padding: 30px 0px;
+    }
+
+    .advantages-tems {
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    .advantages-tems-list {
+        order: 1;
+    }
+
+    .WIL-msu-overlay {
+        width: 270px;
+        height: auto;
+    }
+
+    .industry-partners-block,
+    .full-ele-img {
+        height: 320px;
+    }
+
+    .industry-partners-img-ele {
+        max-width: 100px;
+    }
+
+    .ps-outcomes-ele {
+        height: 300px;
+    }
+
+    .sub-heading {
+        padding: 0px 0px;
+        font-size: 12px !important;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 815px) {
+    .image-section{
+        margin-top: 6rem;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .banner-title{
+        margin-top: 3rem;
+    }
+    .banner-title {
+        font-size: 25px;
+        line-height: 20px;
+    }
+    .banner-para-text {
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left !important;
+    color: #FFFFFF;
+}
+    .block-section {
+        margin: 3em 0rem;
+    }
+
+    .main-heading {
+        font-size: 28px;
+        line-height: 40px;
+    }
+
+    .WIL-msu-item-img {
+        width: 100%;
+        height: 270px;
+    }
+
+    .advantages-block {
+        padding: 30px 0px;
+    }
+
+    .WIL-msu-overlay {
+        width: 280px;
+        height: auto;
+    }
+
+    .career-roadmap-top-items {
+        padding: 20px;
+    }
+
+    .career-roadmap-bottom-text .highlight-text {
+        width: 100%;
+    }
+
+    .industry-partners-block,
+    .full-ele-img {
+        height: 350px;
+    }
+
+    .industry-partners-img-ele {
+        width: 120px;
+    }
+
+    .ps-outcomes-ele {
+        height: 250px;
+    }
+
+    .accordion-block .contentBX .label {
+        font-size: 25;
+        line-height: 36px;
+    }
+
+    .sub-heading {
+        /* padding: 0px 20px; */
+    }
+
+    .custom-card .mediam-para {
+        font-size: 14px;
+    }
+
+    .custom-card {
+        height: 430px;
+    }
+
+    .image-section{
+        margin-top: 7rem !important;
+    }
+}
+@media (min-width: 814px) and (max-width: 992px) {
+    .text-section {
+        /* height: 600px; */
+        height: auto;
+    }
+    .image-section{
+        margin-top: 20px;
+    }
+
+    .text-block-items{
+        padding: 20px 40px 40px 40px !important;
+    }
+}
+
+@media (min-width: 1201px) and (max-width: 1470px){
+    .text-section{
+        padding-top: 2rem !important;
+    }
+    .text-block-items{
+        padding:60px 35px 60px 60px;
+    }
+    .image-section{
+        margin-top: 18px !important;
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1480px) {
+    .banner-title{
+        margin-top: 3rem;
+    }
+    .main-heading {
+        font-size: 30px;
+        line-height: 45px;
+    }
+
+    .WIL-msu-item-img {
+        width: 100%;
+        height: 270px;
+    }
+
+    .WIL-msu-overlay {
+        width: 280px;
+        height: auto;
+    }
+
+    .career-roadmap-top-items {
+        padding: 20px;
+    }
+
+    .career-roadmap-bottom-text .highlight-text {
+        width: 100%;
+    }
+
+    .accordion-block .contentBX .label {
+        font-size: 26px;
+        line-height: 40px;
+    }
+
+    .banner-section {
+        height: auto;
+    }
+
+    .banner-block {
+        height: auto;
+    }
+
+    /* .text-section {
+        height: 620px;
+    } */
+
+    .image-section {
+        /* height: 430px !important; */
+        /* margin-top: 18px !important; */
+    }
+
+    .image-section .banner-bg {
+        height: 500px ;
+    }
+}
+@media (min-width: 1200px) and (max-width: 1480px) {
+    .banner-title{
+        margin-top: 3rem;
+    }
+    .banner-title {
+        font-size: 30px;
+        line-height: 40px;
+        margin-top: 10px;
+    }
+}
+@media (min-width: 992px) and (max-width: 1206px) {
+    .banner-title{
+        margin-top: 3rem;
+    }
+    .banner-title {
+        font-size: 25px;
+        line-height: 20px;
+    }
+    .banner-para-text {
+    font-family: "DM Sans";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left !important;
+    color: #FFFFFF;
+}
+}
+@media (min-width: 1481px) {
+    .banner-title{
+        margin-top: 3rem;
+    }
+    .image-section {
+        margin-top: 30px !important;
+    }
+    .image-section .banner-bg {
+        height: 430px !important;
+        width: 70%;
+    }
+
+}
+
+@media (max-width: 991px){
+    .video-frame{
+        height: 350px !important;
+    }
+}
+
+@media (min-width: 991px){
+    .video-frame{
+        height: 100% !important;
+    }
+}
+@media (min-width:1440px) and (max-width:1469px){
+    .image-section{
+        margin-top: 12px !important;
+        padding-bottom: 20px;
+    }
+
+}
+
+@media (min-width:1469px){
+    .image-section{
+        margin-top: 75px !important;
+        padding-bottom: 20px;
+        margin-bottom: 75px;
+    }
+
+}
+@media (min-width: 1700px) {
+    .WIL-msu-item-img {
+        height: auto;
+    }
+}
+
+
+.pointer-bullet::before {
+    content: "";
+    display: inline-block;
+    width: 16px; /* Adjust size */
+    height: 16px;
+    background-image: url("https://msu-website-all-objects.s3.ap-south-1.amazonaws.com/course-landing-page/white-tick.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 8px;
+}
+
+
+
+
+.text-section {
+    align-items: start !important;
+}
+/* Banner section */
+.banner-block {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
+
+.bg-sm-none {
+    background: none !important;
+}
+.bg-waring{
+    background-color: #FF8F28 !important;
+ }
+ .bg-md-danger {
+    background-color: #ffffff !important;
+    margin-bottom: 1rem;
+    border-radius: 12px;
+    }
+
+  .marquee-container {
+    background-color: #f5b501;
+    overflow: hidden;
+    white-space: nowrap;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.marquee {
+    display: inline-block;
+    white-space: nowrap;
+    will-change: transform;
+    animation: scroll-left 20s linear infinite;
+    position: absolute;
+    left: 100%;
+}
+
+.marquee span {
+    display: inline-block;
+    padding: 0 2rem;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #000;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+
+.our-industry-partners {
+    overflow-x: hidden;
+}
+.accordion-header{
+    height: 66px !important;
+}
+.accordion-item ,.accordion-header {
+    color: #F5F5F6 !important;
+    
+}
+.accordion-button{
+    margin-top: 12px !important; 
+}
+
+@media (max-width:576px){
+    .accordion-header{
+        height: auto !important;
+    }
+    .accordion-button{
+        margin-top: 0px !important; 
+    }
+}
+
+
+/* recognisation and accredation */
+
+.recognition-image .list-unstyled {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px 30px 30px;
+    overflow: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    width: 100%;
+}
+
+.recognition-image .list-unstyled::-webkit-scrollbar {
+    display: none;
+}
+
+.recognition-image .list-unstyled li img {
+    width: 92px;
+    height: auto;
+}
+
+
+/* footer sections */
+
+.heading-1 {
+    font-family: 'DM Sans';
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 52px;
+    width: 500px;
+}
+
+.paragraph-1 {
+    font-family: 'DM Sans';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    text-decoration: none;
+    /* width: 580px; */
+}
+.footer-section {
+    width: 100%;
+    background: #00304B;
+    padding: 3rem 0rem 2rem 0rem;
+}
+
+.footer-section .heading-1 {
+    color: #FFFFFF !important;
+}
+
+.footer-section .paragraph-1 {
+    color: #FFFFFF !important;
+}
+
+.footer-section button,
+.custom-container button {
+    /* margin-top: 2rem !important; */
+    width: 280px;
+    height: 60px;
+}
+
+.custom-container button {
+    margin: 0 auto;
+}
+
+.contact-section {
+    margin-top: 4rem;
+    width: 90%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 3rem;
+    gap: 90px;
+}
+
+.email,
+.whats-app,
+.phone {
+    gap: 20px;
+}
+
+.email .email-icon,.telephone , .phone
+.whats-app span {
+    width: 46px;
+    height: 46px;
+    opacity: 1;
+    background: #FFFFFF1A;
+    border-radius: 50px;
+    padding: 20px;
+}
+
+.copyright-section {
+    margin-top: 2rem;
+    width: 90%;
+}
+
+.copyright span {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+
+.social-links-icons {
+    gap: 40px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.social_icon:hover .custom_icon {
+    transform: scale(1.2);
+}
+
+.custom_icon {
+    width: 25px;
+    height: 24px;
+}
+
+.social-icon-img {
+    width: 22px;
+    height: auto;
+} 
+
+
+@media (max-width:768px) {
+    .recognition-image .list-unstyled {
+        padding: 15px 20px 20px 20px;
+    }
+
+    .recognition-image .list-unstyled li img {
+        width: 60px;
+        height: auto;
+    }
+    .recognition-image {
+        height: 135px !important;
+    }
+    .footer-section .paragraph-1 {
+        font-size: 14px !important;
+    }
+    
+    .footer-section {
+        padding-bottom: 0rem !important;
+    }
+
+    .contact-section {
+        flex-direction: column !important;
+        gap: 20px !important;
+        border-bottom: none !important;
+        padding-bottom: 1rem;
+        margin-top: 2rem;
+    }
+
+    .email,
+    .whats-app,
+    .phone {
+        gap: 10px;
+    }
+
+    .copyright-section {
+        margin-top: 1rem !important;
+        background: #002336;
+        padding: 1rem 0rem !important;
+        flex-direction: column !important;
+        justify-content: space-between !important;
+        gap: 20px !important;
+        width: 100% !important;
+    }
+
+    .copyright {
+        order: 1;
+    }
+
+    .email {
+        border-bottom: 1px solid #FFFFFF;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    .email .paragraph-1 {
+        width: 20% !important;
+    }
+
+    .footer-section .paragraph-1 {
+        font-size: 14px !important;
+    }
+
+    .faq-content {
+        margin-top: 2rem;
+        width: 90% !important;
+    }
+
+    
+    .custom-container {
+        width: 90% !important;
+    }
+
+    /* Button */
+    .footer-section button,
+    .download-brochure {
+        height: 50px;
+    }
+    .custom-container button{
+        height: 42px;
+    }
+
+    .custom-container button {
+        margin-top: 0rem !important;
+        width: 100% !important;
+    }
+
+    
+}
+@media (min-width: 576px) and (max-width: 1200px) {
+    .recognition-image .list-unstyled {
+        padding: 15px 20px 20px 20px;
+    }
+
+    .recognition-image .list-unstyled li img {
+        width: 65px;
+    }
+}
+.slick-arrow , .slick-dots{
+    display: none !important;
+}
+
+.img-container img.img-fluid {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+

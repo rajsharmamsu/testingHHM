@@ -1,0 +1,31 @@
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); /* Adjust to move the content fully off-screen */
+  }
+}
+
+.animate-marquee {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee 500s linear infinite;
+}
+
+.marquee-div {
+  overflow: hidden;
+  position: relative;
+  background: linear-gradient(246.82deg, #FFCE00 0%, #FFB111 99.21%);
+  padding: 10px;
+  width: 100%;
+}
+
+.marquee-content {
+  display: flex;
+  width: 200%; /* This ensures there's enough space to repeat the content */
+}
+
+.marquee-content span {
+  margin-right: 2rem;
+}

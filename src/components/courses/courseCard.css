@@ -1,0 +1,37 @@
+.bg-gradient{
+    background-image: url('/images/courses/bg-gradient.svg');
+  background-repeat: no-repeat;
+  background-size: cover; /* or contain, or specific size */
+  background-position: center;
+  background-color: #fff;
+}
+.item-wrap .lucide-check{
+    border-radius: 50%;
+    background: #0475B3;
+    padding: 4px;
+    color: #fff;
+    font-weight: 900;
+    width: 20px;
+    height: 20px;
+}
+.card__course{
+  position: sticky;
+  top: 150px;
+  z-index: 10;
+}
+.sticky-title{
+  position: sticky;;
+}
+@media screen and (max-width: 768px) {
+  .mob-d-none{
+    display: none;
+  }  
+  .card__course{
+  position: relative;
+  top: 0px;
+  z-index: 10;
+}
+.sticky-title{
+  position: relative;
+}
+}

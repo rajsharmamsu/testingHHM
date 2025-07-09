@@ -1,0 +1,14 @@
+.brand-logo-client{
+    border: 1px solid #FFA201; /* Tailwind's gray-200 */
+}
+
+.image-overlay {
+  background: linear-gradient(0deg,rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.59) 50%, rgba(0, 0, 0, 0) 100%);
+}
+.placement-card-wrap{
+    transition: box-shadow 0.3s ease;
+box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+} 
+.placement-card-wrap:hover{
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
