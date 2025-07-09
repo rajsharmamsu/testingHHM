@@ -46,11 +46,11 @@ export default function useStackScroll() {
 
           card.style.opacity = `${opacity}`;
           card.style.filter = `blur(${blur}rem)`;
-          card.style.transform = `translateY(${(1 - progress) * 50}px)`;
+          // card.style.transform = `translateY(${(1 - progress) * 50}px)`;
         };
 
-        animateCard(card1, progress2, 0, 1, 5, 0);
-        animateCard(card2, progress3, 0, 1, 5, 0);
+        animateCard(card1, progress2, 0.9, 1, 1, 0);
+        animateCard(card2, progress3, 0.9, 1, 1, 0);
       } else {
         [card1, card2, card3].forEach((card) => {
           card.style.opacity = '1';

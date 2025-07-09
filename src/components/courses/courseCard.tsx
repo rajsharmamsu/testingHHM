@@ -40,9 +40,9 @@ export default function CourseCard({
   });
 }, []);
   return (
-    <div className={`item card__course bg-gradient p-10 max-w-7xl mx-auto  mb-10 py-8 shadow-xl ${cardClassName}`} >
+    <div className={`item card__course bg-gradient p-10 max-w-7xl mx-auto  mb-10 shadow-xl ${cardClassName}`} >
       <div className="max-w-7xl mx-auto grid  md:grid-cols-[30%_70%] gap-8 items-center">
-        <div className="relative w-full h-50">
+        <div className="relative w-full h-60">
           <Image
             src={imageSrc}
             alt={imageAlt}
@@ -51,8 +51,8 @@ export default function CourseCard({
           />
         </div>
         <div>
-          <h2 className="text-2xl md:text-3xl font-medium mb-2">{title}</h2>
-          <p className="text-gray-700 mb-2">{description}</p>
+          <h2 className="text-2xl md:text-3xl font-medium mb-4">{title}</h2>
+          <p className="text-gray-700 mb-4">{description}</p>
           <ul className="space-y-2 mb-1">
             <li className='flex items-center gap-4 text-base sm:text-md'>
               <ArrowRight className="w-6 h-6 mob-d-none" /><span className="font-semibold">Duration:</span> {duration}
